@@ -1,0 +1,31 @@
+danbri:
+
+For a healthy Web/TV future:
+
+* share, discovery and annotate functions must not be tied to one platform
+* content identifiers and basic metadata should be public and re-usable
+* remote control functionality must not be tied to one platform 
+
+Building interactive social TV interfaces is hard; sharing that work is 
+critical. To do this, there are basic pieces that should be part of the 
+shared landscape. We propose the following as a good start on the pieces
+that should be common.
+
+So what do we believe around here?? (1) That if you don't agree simple 
+ways of identifying and describing "TV-related stuff", then social, 
+interactive, augmented TV experience will be fragmented into proprietary 
+islands (2) "TV-related stuff" extends to everything that TV content can 
+be *about* (people, places, topics) as well as the pieces that make up 
+the content (video/audio streams, subtitles, annotations, overlays and 
+links) (3) interaction designers have better things to do than learn 5 
+different platform APIs; if we want voice, gesture, multi-touch, 
+smartphone and so on as interfaces to TV, we need some common 
+abstractions that expose both the things a TV-like-platform can do 
+("play a stream, pause a stream...") but also the content it has 
+available (playlists, catalogues). (4) basic broadcast metadata should 
+be accessible to everyone in open and rich form (including stable 
+identifiers), since without it, content won't be easy to link (to people 
+who'll tune in, or within archives after broadcast), or to find; and 
+content that isn't findable is a waste of a lot of people's money and 
+time. <- off top of my head list-ette
+
