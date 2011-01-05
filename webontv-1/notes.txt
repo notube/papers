@@ -29,3 +29,90 @@ who'll tune in, or within archives after broadcast), or to find; and
 content that isn't findable is a waste of a lot of people's money and 
 time. <- off top of my head list-ette
 
+---
+
+chat with danbri, 2011-01-05
+
+[05/01/2011 17:12:35] Dan Brickley: common goals for paper:
+
+[05/01/2011 17:12:45] Dan Brickley: *stuff we want tv people to notice, 
+and w3c people to do*
+[05/01/2011 17:12:57] Dan Brickley: so more position paper than 
+workshop-at-a-conf in tone
+[05/01/2011 17:13:04] Libby Miller: should mention stuff we've been doing
+[05/01/2011 17:13:05] Libby Miller: imo
+[05/01/2011 17:13:07] Dan Brickley: maybe brief survey of the kinds of 
+api that are pertinent
+[05/01/2011 17:13:07] Libby Miller: too
+[05/01/2011 17:13:09] Libby Miller: but yes
+[05/01/2011 17:13:12] Dan Brickley: yeh, ground it in the work
+[05/01/2011 17:13:22] Dan Brickley: oauth for web-based
+[05/01/2011 17:13:29] Libby Miller: feel free to start a new version, if 
+you get to it before me https://github.com/notube/papers/tree/master/webontv-1
+[05/01/2011 17:13:36] Libby Miller: notes are in notes.txt
+[05/01/2011 17:13:42] Dan Brickley: i can write a parag on things like 
+websockets/xmpp/locallink
+[05/01/2011 17:13:55] Libby Miller: I'll probably take a copy to look at 
+between 10-12 GMT tomorrow
+[05/01/2011 17:14:41] Dan Brickley: maybe a kind of landscape sketch as 
+problem statement
+[05/01/2011 17:15:01] Libby Miller: I'm sure apis of some sort are the 
+way to go because they make a lot of stuff much easier
+[05/01/2011 17:15:06] Libby Miller: and boxee etc doing it already
+[05/01/2011 17:15:10] Libby Miller: well xbmc anyway
+[05/01/2011 17:15:27] Libby Miller: and the tv stuff atm is nutty
+[05/01/2011 17:16:29] Dan Brickley: eg. Alice uses Apple TV, Bob uses 
+New MS TV thing, Charlie has a BBC YouBox, Dan has a Boxee box, Erica 
+has an AppleTV, Frederico has a Google TV, George prefers GoogleTV, ... 
+and they all use a dozen other web sites with audio and TV content, or 
+that otherwise know things about them; book club sites, travel sites, 
+....
+[05/01/2011 17:16:38] Dan Brickley: ...not to mention friends and family 
+of each have made their own choices
+[05/01/2011 17:16:44] Libby Miller: inded!
+[05/01/2011 17:17:01] Dan Brickley: so things to note: some of these 
+choices are expensive and hard to change, unlike pure-Web, you got the 
+damn box in your living room
+[05/01/2011 17:17:23] Dan Brickley: similar choices with phones (and 
+less common, tablets; bit sci-fi- other display and touch devices, incl. 
+tables)
+[05/01/2011 17:17:43] Libby Miller: 
+http://tech.fortune.cnn.com/2011/01/03/what-the-hell-is-going-on-with-tv/
+[05/01/2011 17:17:56] Dan Brickley: another note: the trend to move from 
+desktop apps to web players, eg. as joost and iplayer both did, adds 
+different constraints w.r.t. 12 foot mode / remote controls
+[05/01/2011 17:18:45] Dan Brickley: W3C's goal should be to protect the 
+consumer from competition, without holding back progress
+[05/01/2011 17:19:11] Dan Brickley: and the motivation is partly that 
+social exploration and discovery will be critical to having an enjoyable 
+experience and surfacing content from huge collections
+[05/01/2011 17:19:37] Dan Brickley: and for the market to produce 
+excellence in tv products, we don't want people locked into mediocre 
+products simply 'cos their friends are also
+[05/01/2011 17:19:53] Dan Brickley: so we need freedom for people to 
+switch freely and use the same remote, have the same recommendation 
+network, ...
+[05/01/2011 17:20:05] Libby Miller: sounds good to me
+[05/01/2011 17:20:26] Dan Brickley: re google, I know someone very slightly in their tv group, http://cwilso.com/2010/12/13/six-weeks-at-google/
+[05/01/2011 17:20:39] Dan Brickley: i asked him in comments, 'Sounds 
+like a fun job! ”’when they’re sitting 10 feet away from their screen, 
+and interacting with a “remote control””’ Do you have any mechanism yet 
+for 3rd party apps/content to live on second screens (tablets, 
+smartphones, eventually table surfaces) rather than clutter up the 
+telly? At Joost (RIP) we had on-screen HTML/js widgets, but they always 
+came between the viewer and the real content. These days bringing the 
+widgets to a smaller nearer screen seems more appropriate, but there’s 
+not a lot yet by way of standard communication channel between the 
+devices… '
+[05/01/2011 17:20:48] Dan Brickley: Not yet. We’ve got a pretty powerful 
+remote app, but pairing multiple screens is hard to do flexibly with p2p 
+networking (e.g. WebSockets) in the web platform, and if you make a 
+native (e.g. Android) app, you’re limiting the user scenarios (i.e. if I 
+have a Google TV but an iPhone). I think we’ll get what we need in the 
+web platform, but it may take another year or so.
+[05/01/2011 17:30:14] Dan Brickley: how about a "What's wrong with this 
+picture" grid
+[05/01/2011 17:30:22] Dan Brickley: with devices/services down the left, 
+users across the top
+[05/01/2011 17:30:37] Dan Brickley: an X for where bob has an iphone, or 
+alice has an appletv
