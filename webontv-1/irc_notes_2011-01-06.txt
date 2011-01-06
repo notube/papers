@@ -1,0 +1,41 @@
+summary of http://dev.notu.be/2009/04/notubot/2011-01-06#T09-57-18
+
+1. social is the future for TV?
+
+well, is it? or could it be?
+
+2. silo-isation is happening now
+
+* set top boxes
+* social networks
+* remotes
+
+3. consumers lose
+
+* do we have to use the same hardware to particpate?
+
+4. manufactuers lose
+
+* support everything? bet on one?
+
+5. key problems 
+
+ "how do we know what the person is watching?", "how do we get extra information about that?", "how can we manipulate it -- buttons protocol, etc.?", "how do we locate apps/web pages/whatever related to it?"
+ 
+ experimental solutions around here being a) nowp, b) tvnds+prog ontology, c) buttons & remote protocol whatnots, d) see (b)
+
+6. demands
+
+* rethink metadata. URIs for the content items (in various versions/flavours; could plug the progs. onto?); but also rethink role of metadata: model it after rss/atom, as a syndication feed format, an advert that flows out into the public Web in search of viewers; and that the values of metadata fields should where possible also be URIs (eg. Wikipedia pages, IMDB pages) so matching becomes easier (eg. against Facebook social graph LIKEs)
+
+7. results
+
+and if person A watched content X1 on a boxee, and person B watched it on -say- Youtube, ... how to help computers (who are really dumb, let's be clear) realise it was the same stuff --> better recommendations, both social via activitystreams and algorithmic - counting stuff
+
+so once you've got your unique, dereferenceable, URI, what can you do with it? what applications can you enable that 'grab the News at Ten app from the App Store' can't?
+
+'avoid them having to make that trip to the App Store in the first place, because they probably wouldn't bother' is one
+
+
+
+
