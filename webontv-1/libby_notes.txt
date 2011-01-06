@@ -1,90 +1,100 @@
-based largely on http://dev.notu.be/2009/04/notubot/2011-01-06#T09-57-18
+based on http://dev.notu.be/2009/04/notubot/2011-01-06#T09-57-18
 
-1. social is the future for TV?
+Title: APIs and URLs for Social TV
 
-- yes, we think so
- - various examples
- - using existing applications
- - more and more specific ones are being created
+Authors: Dan Brickley[1], Libby Miller[1], Mo McRoberts[2], Vicky Buser[1]
 
-Integration of TV and the social web is already happening - and occurring in an unexpected direction. People are increasingly using online social networks to talk about TV, nearly all via second screens. This trend started without any specific tools to support it.
+[1] NoTube
+[2] Project Baird
 
-- live tv
- - some of these groups (people watching programme x now, or channel x now) may be quite small (numbers?)
- - so the easier it is for people to know that others are watching, the more likely they are to have a social tv experience. at certain low levels they may not find out, especially if they are split between apps, networks or devices
+Summary: Integration of TV and the social web is already happening - and occurring in an unexpected direction. People are increasingly using online social networks to talk about TV, nearly all via second screens. This trend started without any specific tools to support it, but as TV and the Web converge, there is a risk of fragmentation of audiences for programmes over multiple applications and devices. If these silos are created, consumers, manufacturers and developers all lose out. We propose that rethinking the role of metadata as an advertisement for programmes, allowing API access to TV devices, and using URLs for identification are three techniques that would lower costs and increase creativity and thereby benefit consumers.
 
-- on demand tv
- - expressions of enjoyment or dislike
- - more detailed commentary
- - needs an easy-to-get reference to a programme that is understandable
- 
-2. silo-isation is happening now
 
-* set top boxes
-* social networks
-* remotes
-* apps
-* no one company is currently winning in all of these areas - in fact each is winning in different areas (apple beat ms at mobile; fb beat apple at social networks; google beating apple at remote OSs; apple beating google at set-top box, ....)
+1. Social networks are where the integration of Web and TV is already happening
+
+For broadcast TV, social networks are where the integration of Web and TV is already happening. There is evidence to suggest that a high proportion of the conversations in social media are around what people are watching on TV\footnote{For example: a YouGov/Deloitte report published in August 2010 found that 42\% of those UK adults who use the Internet while watching television do so to discuss or comment on the programmes they are watching at the time (http://today.yougov.co.uk/consumer/television-going-social). Similarly, a Twitter survey (conducted by BBC Audience Research) in August 2010 found that 49\% of UK Twitter users in the sample said they used Twitter regularly when watching TV.}. During prime-time scheduling Twitter trending topics are often TV-related, and this Twitter activity can influence what people decide to watch. For example, people reported watching The Eurovision Song Contest on the basis of what was being said about it on Twitter, even though they wouldn't normally have watched it\footnote{\url{http://www.broadstuff.com/archives/1696-Eurovision-songs-sound-better-on-Twitter......html}}. 
+
+
+2. Silos are being created
+
+There are many new and upcoming TV or TV-like devices becoming available, for example internet-connected TVs (for example Samsung TVs with Yahoo widgets enabling you to access your social network), and set top boxes such as the Boxee Box, AppleTV and GoogleTV. 
+
+More and more specific applications are being created, some to control various kinds of software and hardware TV devices (for example MythTV, XBMC and Boxee iPhone and Android remotes). 
+
+Many applications are being made for specific particular programmes or events, for example Channel 4's game show `The Million Pound Drop' includes an online element that lets users play along live as the show progresses\footnote{\url{http://www.channel4.com/programmes/the-million-pound-drop-live/articles/game}}. @@more examples@@
+
+No one company is currently winning in all of these areas - in fact each is winning in different areas (Apple beat microsoft at mobile; Facebook beat Apple at social networks; Google beating Apple at remote OSs; Apple beating Google at set-top box, ....). The result is that silos are being created, such that people need a specific piece of hardware or software to participate in the creative applications that are being made. Nevertheless they continue to use the Web - in the guise of the social web - to talk about broadcast TV. 
 
 3. Consumers lose
 
-* do we have to use the same hardware to particpate?
-* do we have to download the "news at 10" application in order to participate?
-* do we have to use different applications in order to change channel on my googletv, appletv, boxee box?
+Questions they might ask are
+
+"do we have to use the same hardware to participate?"
+"do we have to download the "news at 10" application in order to participate?"
+"do we have to use different applications in order to change channel on my googletv, appletv, boxee box?"
+"do we have to be in the same social network to participate?"
+
+These are barriers to participation. They fragment the audience and makd it more difficult for people to talk about what they are watching in a meaningful way.
 
 4. Manufactuers lose
 
 * support everything? bet on one?
 * expensive, complex, risky
 
-4a. Developers lose
+5. Developers lose
 
 * support everything? bet on one?
 * expensive, complex, risky
+* fragmented support, reduscing time they can spend on creative solutions to consumer problems
 
+6. Key problems for social TV application developers
 
-5. Key problems 
+There are a number of common problems encountered by developers making aplications for TV.
 
-(a) "how do we know what the person is watching?" 
+(a) "How do we know what the person is watching?" 
 
-I.e. find out from the device or other means, and identify it in the wider context of large volumes of TV programmes, broadcast and on-demand.
+I.e. find out from the device or other means, and identify it in the wider context of large volumes of TV programmes, broadcast and on-demand, in order to do something with it, such as provide more information about the programme, connect them to other people watching it.
 
-(b) "how do we get extra information about the programme?" 
+(b) "How do we get extra information about the programme?" 
 
-Identify specific, accurate information about it such as a description, reviews,  and who else is watching or planning to watch. Poor information is worse than none.
+Identify specific, accurate information about it such as a description, reviews,  but also and who else is watching or planning to watch. Poor information is worse than none in this case.
 
-(c) "how do we locate apps/web pages/whatever related to it?" 
+(c) "How do we locate apps/web pages/whatever related to it?" 
 
-Identify accurate related information - lack of accuracy and specificness, as with metadata, is worse than useless.
+Identify accurate related information. Lack of accuracy and specificness, as with metadata, is worse than useless.
 
-(d) "how can we manipulate it?"
+(d) "How can we manipulate it?"
 
 Change channel, play / pause, record items for later, the usual functions of a TV.
- 
-Experimental solutions around here being a) nowp, b) tvnds+prog ontology, d) buttons & remote protocol whatnots, c) see (b)
 
-6. Demands
+NoTube and project Baird have been working on various experimental and interim solutions to some of these problems, including  `NOWP' (what's playing now) (a),  TVDNS and programmes resolver (b,c)  a remote control prototcol (`Buttons') (d,a). These are workarounds for genuine problems with dealing with broadcast TV for social application developers. 
+
+7. Four parts of a long-term solution
 
 * Rethink the role of metadata
 
-Model it after rss/atom, as a syndication feed format, an advert that flows out into the public Web in search of viewers, rather than a precious resource to be parcelled out and sold.
+Model it after rss/atom, as a syndication feed format, an advert that flows out into the public Web in search of viewers, rather than a precious resource to be parcelled out and sold. The BBC Backstage work with TVAnytime showed that when application developers have access to this kind of data they can make very creative applications (@@such as?@@). BBC's /programmes (a URL for every BBC programme) has enabled people to talk about programmes on now, even if they are not yet available on the on demoand service iPlayer. Recently, another UK broadcaster, Channel 4, has seen the benefit of having URLs suitable for sharing  for their programmes (@@not sure if this makes sense@@).
 
-* Resolvable URIs for the content items 
+* Create resolvable URIs for the content items 
 
-In various versions/flavours; could plug the progs. onto?
+A URL for a programme gives it life before, during and after broadcast. It becomes something that people can link to on the web to allow others to understand what they are talking about.
+
+Once this role for metadata is understood and the programme has a URL, identifying a specific programme becomes trivial and two episodes in a series can be distinguished allowing people to find relevant information abotu teh programme.
+
+Resolvable machine-processible URLs (such as json or RDF) allow developers to find more information about a programme and display it suiatble to the end user.
 
 * Values of metadata fields should where possible also be resolvable URIs 
 
 (e.g. Wikipedia pages, IMDB pages) so matching becomes easier (eg. against Facebook social graph LIKEs)
 
-* Open API for controlling the TV and getting access to metadata from it
+* Agree on an open API for controlling the TV and getting access to metadata from it
 
-I.e. make information about what the device is showing available to other devices in a well-documented, open fashion; allow other devices to control what is being shown, play / pause etc
+I.e. make information about what the device is showing available to other devices in a well-documented, open fashion; allow other devices to control what is being shown, play / pause etc.
 
 
-7. Results
+8. Results
 
-Once you've got your unique, dereferenceable, URI, what can you do with it? 
+Once you've got your unique, dereferenceable, URI for a programme, what can you do with it? 
 
 What applications can you enable that 'grab the News at Ten app from the App Store' can't? 
 
@@ -97,7 +107,7 @@ What benefits would it being to consumers?
 * Simpler access to identifiers and informaton about programmes that they can share using their favourite social application
 * Better second screen applications about Tv that provide more interesting and relevant information about programmes
 
-Benefits to manufactuers
+Benefits to manufacturers
 
 * one open, well-documented API to support, rather than complex, secret multiple ones
 
@@ -110,8 +120,7 @@ Benefits to developers
 
 * one open, well-documented API to support, rather than complex, secret multiple ones
 
-8. This is already happening
+9. Conclusions
 
-Boxee, XBMC, MythTV have http APIs to their content and Boxee makes an effort to find URLs to identify the content. People are already using social applications to talk about TV. 
-
+This is already happening. Boxee, XBMC, MythTV have http APIs to their content and Boxee makes an effort to find URLs to identify the content. People are already using social applications to talk about TV. Our four principles suggest ways in which W3C could influence the future of Broadcast TV in ways that benefit the consumer as well as companies involved.
 
