@@ -1,0 +1,117 @@
+based largely on http://dev.notu.be/2009/04/notubot/2011-01-06#T09-57-18
+
+1. social is the future for TV?
+
+- yes, we think so
+ - various examples
+ - using existing applications
+ - more and more specific ones are being created
+
+Integration of TV and the social web is already happening - and occurring in an unexpected direction. People are increasingly using online social networks to talk about TV, nearly all via second screens. This trend started without any specific tools to support it.
+
+- live tv
+ - some of these groups (people watching programme x now, or channel x now) may be quite small (numbers?)
+ - so the easier it is for people to know that others are watching, the more likely they are to have a social tv experience. at certain low levels they may not find out, especially if they are split between apps, networks or devices
+
+- on demand tv
+ - expressions of enjoyment or dislike
+ - more detailed commentary
+ - needs an easy-to-get reference to a programme that is understandable
+ 
+2. silo-isation is happening now
+
+* set top boxes
+* social networks
+* remotes
+* apps
+* no one company is currently winning in all of these areas - in fact each is winning in different areas (apple beat ms at mobile; fb beat apple at social networks; google beating apple at remote OSs; apple beating google at set-top box, ....)
+
+3. Consumers lose
+
+* do we have to use the same hardware to particpate?
+* do we have to download the "news at 10" application in order to participate?
+* do we have to use different applications in order to change channel on my googletv, appletv, boxee box?
+
+4. Manufactuers lose
+
+* support everything? bet on one?
+* expensive, complex, risky
+
+4a. Developers lose
+
+* support everything? bet on one?
+* expensive, complex, risky
+
+
+5. Key problems 
+
+(a) "how do we know what the person is watching?" 
+
+I.e. find out from the device or other means, and identify it in the wider context of large volumes of TV programmes, broadcast and on-demand.
+
+(b) "how do we get extra information about the programme?" 
+
+Identify specific, accurate information about it such as a description, reviews,  and who else is watching or planning to watch. Poor information is worse than none.
+
+(c) "how do we locate apps/web pages/whatever related to it?" 
+
+Identify accurate related information - lack of accuracy and specificness, as with metadata, is worse than useless.
+
+(d) "how can we manipulate it?"
+
+Change channel, play / pause, record items for later, the usual functions of a TV.
+ 
+Experimental solutions around here being a) nowp, b) tvnds+prog ontology, d) buttons & remote protocol whatnots, c) see (b)
+
+6. Demands
+
+* Rethink the role of metadata
+
+Model it after rss/atom, as a syndication feed format, an advert that flows out into the public Web in search of viewers, rather than a precious resource to be parcelled out and sold.
+
+* Resolvable URIs for the content items 
+
+In various versions/flavours; could plug the progs. onto?
+
+* Values of metadata fields should where possible also be resolvable URIs 
+
+(e.g. Wikipedia pages, IMDB pages) so matching becomes easier (eg. against Facebook social graph LIKEs)
+
+* Open API for controlling the TV and getting access to metadata from it
+
+I.e. make information about what the device is showing available to other devices in a well-documented, open fashion; allow other devices to control what is being shown, play / pause etc
+
+
+7. Results
+
+Once you've got your unique, dereferenceable, URI, what can you do with it? 
+
+What applications can you enable that 'grab the News at Ten app from the App Store' can't? 
+
+* Avoid them having to make that trip to the App Store in the first place, because for most programmes they probably wouldn't bother -> avoid fragmentation of audiences. 
+
+What benefits would it being to consumers?
+
+* More diverse, attractive and accessible software and hardware remotes
+* Fewer remotes to keep track of (physical or software)
+* Simpler access to identifiers and informaton about programmes that they can share using their favourite social application
+* Better second screen applications about Tv that provide more interesting and relevant information about programmes
+
+Benefits to manufactuers
+
+* one open, well-documented API to support, rather than complex, secret multiple ones
+
+Benefits to content owners
+
+* The ability to track usage of and market content over its lifecycle (broadcast-> on-demand-> archive)
+* If person A watched content X1 on a boxee, and person B watched it on -say- Youtube, ... how to help computers (who are really dumb, let's be clear) realise it was the same stuff --> better recommendations, both social via activitystreams and algorithmic - counting stuff
+
+Benefits to developers
+
+* one open, well-documented API to support, rather than complex, secret multiple ones
+
+8. This is already happening
+
+Boxee, XBMC, MythTV have http APIs to their content and Boxee makes an effort to find URLs to identify the content. People are already using social applications to talk about TV. 
+
+
