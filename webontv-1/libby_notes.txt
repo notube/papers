@@ -7,12 +7,12 @@ Authors: Dan Brickley[1], Libby Miller[1], Mo McRoberts[2], Vicky Buser[1]
 [1] NoTube
 [2] Project Baird
 
-Summary: Integration of TV and the social web is already happening - and occurring in an unexpected direction. People are increasingly using online social networks to talk about TV, nearly all via second screens. This trend started without any specific tools to support it, but as TV and the Web converge, there is a risk of fragmentation of audiences for programmes over multiple applications and devices. If these silos are created, consumers, manufacturers and developers all lose out. We propose that rethinking the role of metadata as an advertisement for programmes, allowing API access to TV devices, and using URLs for identification are three techniques that would lower costs and increase creativity and thereby benefit consumers.
+Summary: Integration of TV and the social web is already happening - and occurring in an unexpected direction. People are increasingly using online social networks to talk about TV, nearly all via second screens. This trend started without any specific tools to support it, but as TV and the Web converge, there is a risk of fragmentation of audiences for programmes over multiple applications, devices, and websites. If these silos are created, consumers, manufacturers and developers all lose out. We propose that rethinking the role of metadata as an advertisement for programmes, allowing API access to TV devices, and using URLs for identification are three techniques that would lower costs and increase creativity and thereby benefit consumers.
 
 
 1. Social networks are where the integration of Web and TV is already happening
 
-For broadcast TV, social networks are where the integration of Web and TV is already happening. There is evidence to suggest that a high proportion of the conversations in social media are around what people are watching on TV\footnote{For example: a YouGov/Deloitte report published in August 2010 found that 42\% of those UK adults who use the Internet while watching television do so to discuss or comment on the programmes they are watching at the time (http://today.yougov.co.uk/consumer/television-going-social). Similarly, a Twitter survey (conducted by BBC Audience Research) in August 2010 found that 49\% of UK Twitter users in the sample said they used Twitter regularly when watching TV.}. During prime-time scheduling Twitter trending topics are often TV-related, and this Twitter activity can influence what people decide to watch. For example, people reported watching The Eurovision Song Contest on the basis of what was being said about it on Twitter, even though they wouldn't normally have watched it\footnote{\url{http://www.broadstuff.com/archives/1696-Eurovision-songs-sound-better-on-Twitter......html}}. 
+For broadcast TV, social networks are where the integration of Web and TV is already happening. There is evidence to suggest that a high proportion of the conversations in social media are around what people are watching on TV\footnote{For example: a YouGov/Deloitte report published in August 2010 found that 42\% of those UK adults who use the Internet while watching television do so to discuss or comment on the programmes they are watching at the time (http://today.yougov.co.uk/consumer/television-going-social). Similarly, a Twitter survey (conducted by BBC Audience Research) in August 2010 found that 49\% of UK Twitter users in the sample said they used Twitter regularly when watching TV.}. During prime-time scheduling in the UK and US, Twitter trending topics are often TV-related, and this Twitter activity can influence what people decide to watch. For example, people reported watching The Eurovision Song Contest on the basis of what was being said about it on Twitter, even though they wouldn't normally have watched it\footnote{\url{http://www.broadstuff.com/archives/1696-Eurovision-songs-sound-better-on-Twitter......html}}. 
 
 
 2. Silos are being created
@@ -23,7 +23,7 @@ More and more specific applications are being created, some to control various k
 
 Many applications are being made for specific particular programmes or events, for example Channel 4's game show `The Million Pound Drop' includes an online element that lets users play along live as the show progresses\footnote{\url{http://www.channel4.com/programmes/the-million-pound-drop-live/articles/game}}. @@more examples@@
 
-No one company is currently winning in all of these areas - in fact each is winning in different areas (Apple beat microsoft at mobile; Facebook beat Apple at social networks; Google beating Apple at remote OSs; Apple beating Google at set-top box, ....). The result is that silos are being created, such that people need a specific piece of hardware or software to participate in the creative applications that are being made. Nevertheless they continue to use the Web - in the guise of the social web - to talk about broadcast TV. 
+No one company is currently winning in all of these areas - in fact each is winning in different areas (for example, one might argue that Apple has beaten Microsoft at mobile; that Facebook has beaten Apple at social networks; Google is currently beating Apple at remote OSs; Apple is currently beating Google at set-top box, ....). The result is that silos are being created, such that people need a specific piece of hardware or software to participate in the creative applications that are being made. Nevertheless they continue to use the Web - in the guise of the social web - to talk about broadcast TV. 
 
 3. Consumers lose
 
@@ -46,6 +46,10 @@ These are barriers to participation. They fragment the audience and makd it more
 * support everything? bet on one?
 * expensive, complex, risky
 * fragmented support, reduscing time they can spend on creative solutions to consumer problems
+
+5a. Content producers lose
+
+If you make a programme, you want it to find a wide audience. And you want feedback on how it was received, in different demographics/contexts.
 
 6. Key problems for social TV application developers
 
