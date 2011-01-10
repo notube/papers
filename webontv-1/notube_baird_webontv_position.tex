@@ -8,13 +8,18 @@
 \else
 \usepackage{graphicx}
 \fi
-
-%\date{}
+\date{}
 
 \title{APIs and URLs for Social TV}
 
-\author{Authors: Dan Brickley (NoTube),  Libby Miller (NoTube), Mo McRoberts (Project Baird), Vicky Buser (NoTube)}
 
+\author{Dan Brickley}
+\affil{Vrij Universiteit, Amsterdam; NoTube Project}
+\author{Libby Miller}
+\author{Vicky Buser}
+\affil{BBC R\&D; NoTube Project}
+\author{Mo McRoberts}
+\affil{Project Baird}
 
 %(end)
 \begin{document}
@@ -27,9 +32,7 @@
 \fi
 
 \maketitle
-
-Integration of TV and the social web is already happening - and occurring in an unexpected direction. People are increasingly using online social networks to talk about TV, nearly all via second screens. This trend started without any specific tools to support it, but as TV and the Web converge, there is a risk of fragmentation of audiences for programmes over multiple applications, devices, and websites. If these silos are created, consumers, manufacturers and developers all lose out. We propose that rethinking the role of metadata as an advertisement for programmes, allowing API access to TV devices, and using URLs for identification are three techniques that would lower costs and increase creativity and thereby benefit consumers.
-
+Integration of TV and the social web is already happening - and occurring in an interesting direction. People are increasingly using online social networks to talk about TV, nearly all via second screens. This trend started without any specific tools to support it, but as TV and the Web converge, there is a risk of fragmentation of audiences for programmes over multiple applications, devices, and websites. If these silos are created, consumers, manufacturers and developers all lose out. We propose that rethinking the role of metadata as an advertisement for programmes, allowing API access to TV devices, and using URLs for identification are three techniques that would lower costs and increase creativity and thereby benefit consumers.
 
 \section{Social networks are where the integration of Web and TV is already happening}
 
@@ -46,53 +49,31 @@ Many applications are being made for specific particular programmes or events, f
 
 No one company is currently winning in all of these areas - in fact each is winning in different areas (for example, one might argue that Apple has beaten Microsoft at mobile; that Facebook has beaten Apple at social networks; Google is currently beating Apple at remote OSs; Apple is currently beating Google at set-top box, ....). The result is that silos are being created, such that people need a specific piece of hardware or software to participate in the creative applications that are being made. Nevertheless they continue to use the Web - in the guise of the social web - to talk about broadcast TV. 
 
-\subsection{Consumers lose}
+\subsection{Audiences, Manufacturers, Developers and Content Owners all Lose}
 
-Questions they might ask are
-
-``do we have to use the same hardware to participate?"
-``do we have to download the "news at 10" application in order to participate?"
-``do we have to use different applications in order to change channel on my googletv, appletv, boxee box?"
-``do we have to be in the same social network to participate?"
-
-These are barriers to participation. They fragment the audience and makd it more difficult for people to talk about what they are watching in a meaningful way.
-
-\subsection{Manufacturers lose}
-
-\begin{itemize}
-\item{support everything? bet on one?}
-\item{expensive, complex, risky}
-\end{itemize}
-
-\subsection{Developers lose}
-
-\begin{itemize}
-\item{support everything? bet on one?}
-\item{expensive, complex, risky}
-\item{fragmented support, reduscing time they can spend on creative solutions to consumer problems}
-\end{itemize}
-
-\subsection{Content producers lose}
-
-If you make a programme, you want it to find a wide audience. And you want feedback on how it was received, in different demographics/contexts.
+Silos put barriers on participation making it more difficult for people to talk about what they are watching in a meaningful way. If potential members of the audience for a programme have to use the same hardware, or download the same application, or be on the same social network to participate, for most programmes they simply will not do it, and the potential value to them and to the rights holders in terms of  increased audiences, engaged audiences, and feedback is lost. Manufacturers and developers have to take a risk on which formats and protocols to support and reducing the time they can spend on creative solutions to consumer interests and problems. 
 
 \section{Key problems for social TV application developers}
 
-There are a number of common problems encountered by developers making aplications for TV.
+There are a number of common problems encountered by developers making applications for TV.
+\\
 
-(a) "How do we know what the person is watching?" 
+{\bf{(a) "How do we know what the person is watching?" }}
 
 I.e. find out from the device or other means, and identify it in the wider context of large volumes of TV programmes, broadcast and on-demand, in order to do something with it, such as provide more information about the programme, connect them to other people watching it.
+\\
 
-(b) "How do we get extra information about the programme?" 
+{\bf{(b) "How do we get extra information about the programme?" }}
 
 Identify specific, accurate information about it such as a description, reviews,  but also and who else is watching or planning to watch. Poor information is worse than none in this case.
+\\
 
-(c) "How do we locate apps/web pages/whatever related to it?" 
+{\bf{(c) "How do we locate apps/web pages/whatever related to it?" }}
 
 Identify accurate related information. Lack of accuracy and specificness, as with metadata, is worse than useless.
+\\
 
-(d) "How can we manipulate it?"
+{\bf{(d) "How can we manipulate it?"}}
 
 Change channel, play / pause, record items for later, the usual functions of a TV.
 
@@ -100,74 +81,51 @@ NoTube and project Baird have been working on various experimental and interim s
 
 \section{Four parts of a long-term solution}
 
-\subsection{Rethink the role of metadata}
+{\bf{Rethink the role of metadata}}
 
 Model it after rss/atom, as a syndication feed format, an advert that flows out into the public Web in search of viewers, rather than a precious resource to be parcelled out and sold. The BBC Backstage work with TVAnytime showed that when application developers have access to this kind of data they can make very creative applications (@@such as?@@). BBC's /programmes (a URL for every BBC programme) has enabled people to talk about programmes on now, even if they are not yet available on the on demoand service iPlayer. Recently, another UK broadcaster, Channel 4, has seen the benefit of having URLs suitable for sharing  for their programmes (@@not sure if this makes sense@@).
+\\
 
-\subsection{Create resolvable URIs for the content items}
+{\bf{Create resolvable URIs for the content items}}
 
 A URL for a programme gives it life before, during and after broadcast. It becomes something that people can link to on the web to allow others to understand what they are talking about.
 
-Once this role for metadata is understood and the programme has a URL, identifying a specific programme becomes trivial and two episodes in a series can be distinguished allowing people to find relevant information abotu teh programme.
+Once this role for metadata is understood and the programme has a URL, identifying a specific programme becomes trivial and two episodes in a series can be distinguished allowing people to find relevant information about the programme.
 
 Resolvable machine-processible URLs (such as json or RDF) allow developers to find more information about a programme and display it suiatble to the end user.
+\\
 
-\subsection{Values of metadata fields should where possible also be resolvable URIs}
+{\bf{Values of metadata fields should where possible also be resolvable URIs}}
 
 (e.g. Wikipedia pages, IMDB pages) so matching becomes easier (eg. against Facebook social graph LIKEs)
+\\
 
-\subsection{Agree on an open API for controlling the TV and getting access to metadata from it}
+{\bf{Agree on an open API for controlling the TV and getting access to metadata from it}}
 
 I.e. make information about what the device is showing available to other devices in a well-documented, open fashion; allow other devices to control what is being shown, play / pause etc.
 
 
-\section{Results}
+\subsection{Audiences, Manufacturers, Developers and Content Owners all Benefit}
 
-Once you've got your unique, dereferenceable, URI for a programme, what can you do with it? 
+Once you've got your unique, dereferenceable, URI for a programme, an API to the TV, what can you do with it? 
+\\
 
-\subsection{What applications can you enable that 'grab the News at Ten app from the App Store' can't?}
+{\bf{Benefits to Audiences}}
 
-\begin{itemize}
-\item{Avoid them having to make that trip to the App Store in the first place, because for most programmes they probably wouldn't bother -> avoid fragmentation of audiences. }
-\end{itemize}
+More diverse, attractive and accessible software and hardware remotes, and fewer remotes to keep track of (physical or software). Simpler access to identifiers and informaton about programmes that they can share using their favourite social application. Better second screen applications about TV that provide more interesting and relevant information about programmes. The ability to use social media to help them find programmes to watch even if they themselves don't participate
+\\
 
-\subsection{What benefits would it bring to consumers?}
+{\bf{Benefits to Content Producers}}
 
-\begin{itemize}
-\item{More diverse, attractive and accessible software and hardware remotes}
-\item{Fewer remotes to keep track of (physical or software)}
-\item{Simpler access to identifiers and informaton about programmes that they can share using their favourite social application}
-\item{Better second screen applications about Tv that provide more interesting and relevant information about programmes}
-\end{itemize}
+Avoid audiences having to make that trip to the App Store in the first place, because for most programmes they probably wouldn't bother and thereby avoid fragmentation of audiences. The ability to track usage of and market content over its lifecycle (broadcast-> on-demand-> archive). If person A watched content X1 on a boxee, and person B watched it on -say- Youtube, ... how to help computers (who are really dumb, let's be clear) realise it was the same stuff, leading to better recommendations, both social via activitystreams and algorithmic - counting stuff
+\\
 
-\subsection{Benefits to manufacturers}
+{\bf{Benefits to Manufacturers and Developers}}
 
-\begin{itemize}
-\item{one open, well-documented API to support, rather than complex, secret multiple ones}
-\end{itemize}
-
-\subsection{Benefits to content owners}
-
-\begin{itemize}
-\item{The ability to track usage of and market content over its lifecycle (broadcast-> on-demand-> archive)}
-\item{If person A watched content X1 on a boxee, and person B watched it on -say- Youtube, ... how to help computers (who are really dumb, let's be clear) realise it was the same stuff --> better recommendations, both social via activitystreams and algorithmic - counting stuff}
-\end{itemize}
-
-\subsection{Benefits to developers}
-
-\begin{itemize}
-\item{one open, well-documented API to support, rather than complex, secret multiple ones}
-\end{itemize}
-
-\subsection{Benefits to audiences}
-
-\begin{itemize}
-\item{the ability to use social media to help them find programmes to watch even if they themselves don't participate}
-\end{itemize}
-
+A single, open, well-documented API to support, rather than complex, secret multiple ones
 
 \section{Conclusions}
 
-This is already happening. Boxee, XBMC, MythTV have http APIs to their content and Boxee makes an effort to find URLs to identify the content. People are already using social applications to talk about TV. Our four principles suggest ways in which W3C could influence the future of Broadcast TV in ways that benefit the consumer as well as companies involved.
+This is already happening. Boxee, XBMC, MythTV have http APIs to their content and Boxee makes an effort to find URLs to identify the content. People are already using social applications to talk about TV. Our four principles suggest ways in which W3C could influence the future of Broadcast TV in ways that benefit audiences as well as companies involved.
 
 \end{document}
