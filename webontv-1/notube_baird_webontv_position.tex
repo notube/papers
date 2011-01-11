@@ -90,12 +90,12 @@ NoTube and Project Baird have been working on various experimental and interim s
 
 Use metadata as an advert for the content that can flow out into the public Web in search of viewers, rather than a precious resource to be parcelled out and sold. By making it public, and in open formats and licenses, the metadata can be a tool to draw users in via applications made by third parties.
 
-The BBC Backstage work with TV-Anytime showed that when application developers have access to this kind of data they can make very creative applications (MightyTV came about from use of the TV-Anytime data - see the Backstage e-book.  The use of the old web API based on the same data led to the BBC Radio Widget (by Phantom Gorilla) for Macs that was distributed on the CD on the front cover of Macworld). BBC's /programmes service (providing a URL for every BBC programme) has enabled people to coherently identify programmes which are on now or upcoming, even if they are not yet available on the on-demand service iPlayer. Recently, another UK broadcaster, Channel 4, has seen the benefit of having URLs suitable for sharing for their programmes).
+The BBC Backstage work with TV-Anytime showed that when application developers have access to this kind of data they can make very creative applications: the Backstage e-book\footnote{\url{http://www.bbc.co.uk/blogs/researchanddevelopment/2011/01/bbc-backstage-ebook-retrospect.shtml}} has the details. 
 \\
 
 {\bf{Create URLs for the content items}}
 
-Part of making metadata an advert for the content is helping people easily share information about it. Using an URL for a programme gives it life before, during and after broadcast, allowing interest in it to circulate through social networks. Being easily sharable It becomes something that people can link to on the social Web to allow others to understand what they are talking about. 
+Part of making metadata an advert for the content is helping people easily share information about it. Using an URL for a programme gives it life before, during and after broadcast, allowing interest in it to circulate through social networks. Being easily sharable It becomes something that people can link to on the social Web to allow others to understand what they are talking about.  The BBC's /programmes service (providing a unique URL and metadata for every BBC programme) has enabled people to coherently identify programmes which are on now or upcoming, even if they are not yet available on the on-demand service iPlayer. Recently, another UK broadcaster, Channel 4, has seen the benefit of having URLs suitable for sharing for their programmes.
 
 Once this role for metadata is understood and the programme has a unique URL, identifying a specific programme becomes trivial, and applications can add specific value. Adding resolvable {\em{machine-processible}} URLs (such as JSON or RDF) allow developers to find more information about a programme and present it suitably to the end user. Ideally, many of the values of metadata fields will also be URLs, creating links to other resources such as Wikipedia and IMDB, and enabling aggregated matching and discovery based upon topics and themes.
 
@@ -104,7 +104,7 @@ In principle, this metadata could be extended to relate instances of programmes 
 
 {\bf{Agree on open APIs for controlling the TV and getting access to metadata from it}}
 
-The final piece of the puzzle is to allow other applications to access and control the TV playing device, application or web page. Whether using a second screen or looking at widgets on a TV screen, to be interesting and useful to audiences, an application needs to be able to identify what is currently playing and to allow the user to easily manipulate what they can see. So together with access to metadata, availability of URLs for content items, this needs information about what the device is showing available to other devices or applications in a well-documented, open fashion, and allow other devices to control what is being shown, change channel, play / pause, and similar conventional remote functions.
+The final piece of the puzzle is to allow other applications to access and control the TV playing device, application or web page. Whether using a second screen or looking at widgets on a TV screen, to be interesting and useful to audiences, an application needs to be able to identify what is currently playing and to allow the user to easily manipulate what they can see. So together with access to metadata, and availability of URLs for content items, this needs information about what the device is showing available to other devices or applications in a well-documented, open fashion, and allow other devices to control what is being shown, change channel, play / pause, and similar conventional remote functions.
 
 The core need here is to establish simple, usable mechanisms for both content identification and user identification/authentication, alongside standards-based communications channels between 'controlling' and 'controlled' devices. Specific APIs for services such as scheduled recording, media annotation and search would operate within this environment, and be accompanied by supporting APIs amongst Web services. For example, a smartphone-to-TV API could be used to bookmark, tag or annotate content, while a Web-based OAuth API could be used to allow the user to share those otherwise private activity streams with other sites and services.
 
@@ -119,7 +119,7 @@ With these features, audiences could expect diverse, attractive and accessible s
 
 They could expect simpler access to information about programmes that they can share using their favourite social application, better programme-specific applications, and better second screen TV applications providing more interesting and relevant information about programmes, and better recommendations based on defragmented statistical information about watching behaviour.
 
-They should be able to use data provided from social media to find interesting things to watch even when they don't themselves participate, because of the ability to identify what is being watched over large populations in real time.
+They should be able to use data provided from social media to find interesting things to watch even when they don't themselves participate in social media, because of the ability to identify what is being watched over large populations in real time.
 \\
 
 {\bf{Benefits to Content Producers}}
@@ -133,7 +133,7 @@ Open and well-documented APIs to support, rather than complex, secret multiple o
 
 \section{Challenges and Conclusions}
 
-To an extent is already happening. Boxee, XBMC, MythTV have HTTP APIs to their content and Boxee makes an effort to find URLs to identify the content. People are already using social applications to talk about TV. Our three principles suggest ways in which W3C could influence the future of TV in ways that benefit audiences as well as companies involved. There are significant challenges around preserving the privacy of consumers and helping them understand what privacy risks they face, but W3C is well-placed to do this.
+To an extent these changes are already happening. Boxee, XBMC, MythTV have HTTP APIs to their content and Boxee makes an effort to find URLs to identify the content. People are already using social applications to talk about TV. Our three principles suggest ways in which W3C could influence the future of TV in ways that benefit audiences as well as companies involved. There are significant challenges around preserving the privacy of consumers and helping them understand what privacy risks they face, but W3C is well-placed to consider thsse.
 
 
 \end{document}
