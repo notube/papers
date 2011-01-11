@@ -47,11 +47,13 @@ There are many new and upcoming TV or TV-like devices becoming available, for ex
 
 Increasingly specific applications are being created to control and allow interaction with various kinds of applications and devices on the second screen, suych as the MythTV, XBMC and Boxee iPhone and Android remote controls.
 
+Apple's iPhone App Store contains dozens of media directory applications - from TV guides to movie recommenders - but the vast majority of these are incapable of interacting with home or Web players for this content. The Radio Times TV guide, for example, has an impressive feature list: you can search, bookmark, personalise, rate shows, and share via Facebook and Twitter. However, it can't turn over the TV, or book a recording. 
+
 Many applications have been (and continue to be) made for specific programmes or events. For example, Channel 4's game show `The Million Pound Drop' includes an online element that lets users play along live as the show progresses\footnote{\url{http://www.channel4.com/programmes/the-million-pound-drop-live/articles/game}}. Other examples include ITVLive during the World Cup - an experimental but very popular service\footnote{\url{http://paidcontent.co.uk/article/419-the-new-live-tv-how-real-time-social-media-are-upgrading-the-box/}} PickLive for playing along during football matches \footnote{\url{https://picklive.com/}} and the programme specific Seven Days application \footnote{\url{hhttp://sevendays.channel4.com/}}.
 
 No one company is currently winning in all of these areas - in fact each is winning in different areas. The end result of all of this is that silos are being created, such that people need a specific piece of hardware or software to participate in the creative applications that are being developed and released. Nevertheless they continue to use the Web - in the guise of the ``Social Web'' - to talk about broadcast TV. 
 
-\subsection{Audiences, Manufacturers, Developers and Content Owners all Lose}
+\subsection{Audiences, Manufacturers, Developers, Programme Makers and Content Owners all Lose}
 
 Silos impose barriers upon participation, making it more difficult for people to talk about what they are watching in a meaningful way - and so by extension, for broadcasters to monitor the conversations which are ongoing. If potential members of the audience for a programme have to use the same hardware, or download the same application, or be on the same social network to participate, for most programmes they simply will not do it, and the potential value to them and to the rights holders in terms of  increased audiences, engaged audiences, and feedback is lost. Manufacturers and developers have to take a risk on which formats and protocols to support and reducing the time they can spend on creative solutions to consumer interests and problems. 
 
@@ -99,10 +101,11 @@ Once this role for metadata is understood and the programme has a unique URL, id
 In principle, this metadata could be extended to relate instances of programmes in a cross-broadcaster fashion: perhaps a programme-maker might assign its own URI for a production, which is then referenced by the broadcaster-provided metadata. Not only would this allow for a degree of inheritance if desired (that is, the broadcaster-provided metadata overrides that provided by the programme-maker), but also allow applications -- such as those concerned with conversations about a programme on the Social Web -- to relate the different conversations together which relate to each broadcaster's provision of the programme.  This is especially salient in the case of international distribution, in particular where a programme is broadcast in many regions in a short space of time. The Web is global, after all.
 \\
 
-{\bf{Agree on an open API for controlling the TV and getting access to metadata from it}}
+{\bf{Agree on open APIs for controlling the TV and getting access to metadata from it}}
 
 The final piece of the puzzle is to allow other applications to access and control the TV playing device, application or web page. Whether using a second screen or looking at widgets on a TV screen, to be interesting and useful to audiences, an application needs to be able to identify what is currently playing and to allow the user to easily manipulate what they can see. So together with access to metadata, availability of URLs for content items, this needs information about what the device is showing available to other devices or applications in a well-documented, open fashion, and allow other devices to control what is being shown, change channel, play / pause, and similar conventional remote functions.
 
+The core need here is to establish simple, usable mechanisms for both content identification and user identification/authentication, alongside standards-based communications channels between 'controlling' and 'controlled' devices. Specific APIs for services such as scheduled recording, media annotation and search would operate within this environment, and be accompanied by supporting APIs amongst Web services. For example, a smartphone-to-TV API could be used to bookmark, tag or annotate content, while a Web-based OAuth API could be used to allow the user to share those otherwise private activity streams with other sites and services.
 
 \subsection{Audiences, Manufacturers, Developers and Content Owners all Benefit}
 
@@ -125,11 +128,11 @@ Content producers should expect a less fragmented audience, more participation a
 
 {\bf{Benefits to Manufacturers and Developers}}
 
-A single, open, well-documented API to support, rather than complex, secret multiple ones, meaning more time to focus on creative solutions to the problem of finding what to watch.
+Open and well-documented APIs to support, rather than complex, secret multiple ones, meaning more time to focus on creative solutions to the problem of finding what to watch.
 
 \section{Challenges and Conclusions}
 
-To an extent is already happening. Boxee, XBMC, MythTV have http APIs to their content and Boxee makes an effort to find URLs to identify the content. People are already using social applications to talk about TV. Our three principles suggest ways in which W3C could influence the future of TV in ways that benefit audiences as well as companies involved. There are significant challenges around preserving the privacy of consumers and helping them understand what privacy risks they face, but W3C is well-placed to do this.
+To an extent is already happening. Boxee, XBMC, MythTV have HTTP APIs to their content and Boxee makes an effort to find URLs to identify the content. People are already using social applications to talk about TV. Our three principles suggest ways in which W3C could influence the future of TV in ways that benefit audiences as well as companies involved. There are significant challenges around preserving the privacy of consumers and helping them understand what privacy risks they face, but W3C is well-placed to do this.
 
 
 \end{document}
