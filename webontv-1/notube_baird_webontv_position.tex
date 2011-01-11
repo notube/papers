@@ -32,7 +32,9 @@
 \fi
 
 \maketitle
-Integration of TV and the social web is already happening - and occurring in an interesting direction. People are increasingly using online social networks to talk about TV, nearly all via second screens. This trend started without any specific tools to support it, but as TV and the Web converge, there is a risk of fragmentation of audiences for programmes over multiple applications, devices, and websites. If these silos are created, consumers, manufacturers and developers all lose out. We propose that rethinking the role of metadata as an advertisement for programmes, allowing API access to TV devices, and using URLs for identification are three techniques that would lower costs and increase creativity and thereby benefit consumers.
+Integration of TV and the social web is already happening: and moving in an interesting direction. People are increasingly using online social networks to talk about TV, predominantly via second screens. This trend began without any specific tools to support it, but as TV and the Web converge, there is a risk of fragmentation of audiences for programmes over multiple applications, devices, and websites. If these silos are created, consumers, manufacturers and developers all lose out.
+
+We propose that the rethinking the role of metadata as an advertisement for programmes, allowing API access to TV devices, and using URLs for programme identification are three techniques that would lower costs and foster creativity, and thereby benefit consumers.
 
 \section{Social networks are where the integration of Web and TV is already happening}
 
@@ -41,17 +43,17 @@ For broadcast TV, social networks are where the integration of Web and TV is alr
 
 \section{Silos are being created}
 
-There are many new and upcoming TV or TV-like devices becoming available, for example internet-connected TVs (for example Samsung TVs with Yahoo widgets enabling you to access your social network), and set top boxes such as the Boxee Box, AppleTV and GoogleTV. 
+There are many new and upcoming TV or TV-like devices becoming available, for example internet-connected TVs (such as Samsung TVs with Yahoo widgets enabling you to access your social network), and set top boxes such as the Boxee Box, Apple TV and GoogleTV. 
 
-More and more specific applications are being created, some to control various kinds of software and hardware TV devices (for example MythTV, XBMC and Boxee iPhone and Android remotes). 
+Increasingly specific applications are being created to control and allow interaction with various kinds of applications and devices on the second screen, suych as the MythTV, XBMC and Boxee iPhone and Android remote controls.
 
-Many applications are being made for specific particular programmes or events, for example Channel 4's game show `The Million Pound Drop' includes an online element that lets users play along live as the show progresses\footnote{\url{http://www.channel4.com/programmes/the-million-pound-drop-live/articles/game}}. Other examples include ITVLive during the World Cup - an experimental but very popular service\footnote{\url{http://paidcontent.co.uk/article/419-the-new-live-tv-how-real-time-social-media-are-upgrading-the-box/}} PickLive for playing along during football matches \footnote{\url{https://picklive.com/}} and the programme specific Seven Days application \footnote{\url{hhttp://sevendays.channel4.com/}}.
+Many applications have been (and continue to be) made for specific programmes or events. For example, Channel 4's game show `The Million Pound Drop' includes an online element that lets users play along live as the show progresses\footnote{\url{http://www.channel4.com/programmes/the-million-pound-drop-live/articles/game}}. Other examples include ITVLive during the World Cup - an experimental but very popular service\footnote{\url{http://paidcontent.co.uk/article/419-the-new-live-tv-how-real-time-social-media-are-upgrading-the-box/}} PickLive for playing along during football matches \footnote{\url{https://picklive.com/}} and the programme specific Seven Days application \footnote{\url{hhttp://sevendays.channel4.com/}}.
 
-No one company is currently winning in all of these areas - in fact each is winning in different areas (for example, one might argue that Apple has beaten Microsoft at mobile; that Facebook has beaten Apple at social networks; Google is currently beating Apple at remote OSs; Apple is currently beating Google at set-top box, ....). The result is that silos are being created, such that people need a specific piece of hardware or software to participate in the creative applications that are being made. Nevertheless they continue to use the Web - in the guise of the social web - to talk about broadcast TV. 
+No one company is currently winning in all of these areas - in fact each is winning in different areas. The end result of all of this is that silos are being created, such that people need a specific piece of hardware or software to participate in the creative applications that are being developed and released. Nevertheless they continue to use the Web - in the guise of the ``Social Web'' - to talk about broadcast TV. 
 
 \subsection{Audiences, Manufacturers, Developers and Content Owners all Lose}
 
-Silos put barriers on participation making it more difficult for people to talk about what they are watching in a meaningful way. If potential members of the audience for a programme have to use the same hardware, or download the same application, or be on the same social network to participate, for most programmes they simply will not do it, and the potential value to them and to the rights holders in terms of  increased audiences, engaged audiences, and feedback is lost. Manufacturers and developers have to take a risk on which formats and protocols to support and reducing the time they can spend on creative solutions to consumer interests and problems. 
+Silos impose barriers upon participation, making it more difficult for people to talk about what they are watching in a meaningful way - and so by extension, for broadcasters to monitor the conversations which are ongoing. If potential members of the audience for a programme have to use the same hardware, or download the same application, or be on the same social network to participate, for most programmes they simply will not do it, and the potential value to them and to the rights holders in terms of  increased audiences, engaged audiences, and feedback is lost. Manufacturers and developers have to take a risk on which formats and protocols to support and reducing the time they can spend on creative solutions to consumer interests and problems. 
 
 \section{Key problems for social TV application developers}
 
@@ -60,24 +62,24 @@ There are a number of common problems encountered by developers making applicati
 
 {\bf{(a) ``How do we know what the person is watching?" }}
 
-I.e. find out from the device or other means, and identify it in the wider context of large volumes of TV programmes, broadcast and on-demand, in order to do something with it, such as provide more information about the programme, connect them to other people watching it.
+Determine, either from the ``playback'' device or by other means, and identify in the wider context of large volumes of TV programmes (both broadcast and on-demand), what exactly is being watched in the form of some kind of unique identifier.
 \\
 
-{\bf{(b) ``How do we get extra information about the programme?" }}
+{\bf{(b) ``How do we locate additional information about the programme?" }}
 
-Identify specific, accurate information about it such as a description, reviews,  but also and who else is watching or planning to watch. Poor information is worse than none in this case.
+Given a unique identifier for a programme (or, often, a ``broadcast event''), there must be some mechanism to use this identifier to locate additional information about the programme: information which is not typically broadcast along with the programme itself. 
 \\
 
-{\bf{(c)``How do we locate apps/web pages/whatever related to it?" }}
+{\bf{(c)``How do we locate apps or Web pages related to it?" }}
 
-Identify accurate related information. Lack of accuracy and specificness, as with metadata, is worse than useless.
+Once a mechanism exists to locate rich information about a programme, it is an extension of this idea to provide a mechanism it allow programme-specific applications to be launched, or Web pages to be navigated to. Appropriate use of ``Web applications'' allow the process to be streamlined: delivering complex applications using Web technologies without the friction of a typical locate-download-install-launch process.
 \\
 
 {\bf{(d) ``How can we manipulate it?"}}
 
-Change channel, play / pause, record items for later, the usual functions of a TV.
+Beyond identifying a programme, a rounded ``second screen environment'' needs to provide a way for second screen users to manipulate the content, providing APIs and protocols for playback control, interaction with applications presented on the ``first'' screen, and so on.
 
-NoTube and Project Baird have been working on various experimental and interim solutions to some of these problems, including  `NOWP' (what's playing now) (a),  TVDNS and programmes resolver (b,c)  a remote control prototcol (`Buttons') (d,a). These are workarounds for genuine problems with dealing with broadcast TV for social application developers. 
+NoTube and Project Baird have been working on various experimental and interim solutions to some of these problems, including  `NOWP' (enabling a device to determine what's ``now playing'' on a receiver);  `TVDNS' (mapping broadcast-domain-specific identifiers to DNS domain names which may be used for service discovery); a metadata resolver (advertised via TVDNS, and providing a mechanism for translating identifiers received over the air to URLs which can be resolved to obtain rich metadata); and a remote control prototcol (`Buttons'). These are prototypes intended to demonstrate ways of solving genuine problems with dealing with broadcast TV for social application developers. 
 
 \section{Three parts of a long-term solution}
 
@@ -85,14 +87,16 @@ NoTube and Project Baird have been working on various experimental and interim s
 
 Use metadata as an advert for the content that can flow out into the public Web in search of viewers, rather than a precious resource to be parcelled out and sold. By making it public, and in open formats and licenses, the metadata can be a tool to draw users in via applications made by third parties.
 
-The BBC Backstage work with TVAnytime showed that when application developers have access to this kind of data they can make very creative applications (MightyTV came about from use of the TV-Anytime data - see the Backstage e-book.  The use of the old web API based on the same data led to the BBC Radio Widget (by Phantom Gorilla) for Macs that was distributed on the CD on the front cover of Macworld). BBC's /programmes (a URL for every BBC programme) has enabled people to talk about programmes on now, even if they are not yet available on the on demoand service iPlayer. Recently, another UK broadcaster, Channel 4, has seen the benefit of having URLs suitable for sharing for their programmes).
+The BBC Backstage work with TV-Anytime showed that when application developers have access to this kind of data they can make very creative applications (MightyTV came about from use of the TV-Anytime data - see the Backstage e-book.  The use of the old web API based on the same data led to the BBC Radio Widget (by Phantom Gorilla) for Macs that was distributed on the CD on the front cover of Macworld). BBC's /programmes service (providing a URL for every BBC programme) has enabled people to coherently identify programmes which are on now or upcoming, even if they are not yet available on the on-demand service iPlayer. Recently, another UK broadcaster, Channel 4, has seen the benefit of having URLs suitable for sharing for their programmes).
 \\
 
 {\bf{Create URLs for the content items}}
 
 Part of making metadata an advert for the content is helping people easily share information about it. Using an URL for a programme gives it life before, during and after broadcast, allowing interest in it to circulate through social networks. Being easily sharable It becomes something that people can link to on the social Web to allow others to understand what they are talking about. 
 
-Once this role for metadata is understood and the programme has a unique URL, identifying a specific programme becomes trivial, and applications can add specific value. Adding resolvable {\em{machine-processible}} URLs (such as JSON or RDF) allow developers to find more information about a programme and display it suitably to the end user. Where possible, values of metadata fields should where possible also be URLs (such as Wikipedia pages, IMDB pages) so matching becomes easier (eg. against Facebook social graph LIKEs).
+Once this role for metadata is understood and the programme has a unique URL, identifying a specific programme becomes trivial, and applications can add specific value. Adding resolvable {\em{machine-processible}} URLs (such as JSON or RDF) allow developers to find more information about a programme and present it suitably to the end user. Ideally, many of the values of metadata fields will also be URLs, creating links to other resources such as Wikipedia and IMDB, and enabling aggregated matching and discovery based upon topics and themes.
+
+In principle, this metadata could be extended to relate instances of programmes in a cross-broadcaster fashion: perhaps a programme-maker might assign its own URI for a production, which is then referenced by the broadcaster-provided metadata. Not only would this allow for a degree of inheritance if desired (that is, the broadcaster-provided metadata overrides that provided by the programme-maker), but also allow applications -- such as those concerned with conversations about a programme on the Social Web -- to relate the different conversations together which relate to each broadcaster's provision of the programme.  This is especially salient in the case of international distribution, in particular where a programme is broadcast in many regions in a short space of time. The Web is global, after all.
 \\
 
 {\bf{Agree on an open API for controlling the TV and getting access to metadata from it}}
